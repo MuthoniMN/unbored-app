@@ -2,7 +2,7 @@ document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
   const choice = document.querySelector('input').value
-  const url = `http://www.boredapi.com/api/activity?type=${choice}`
+  const url = `https://www.boredapi.com/api/activity?type=${choice}`
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
